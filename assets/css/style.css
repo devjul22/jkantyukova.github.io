@@ -5,8 +5,9 @@
 /* General Styles */
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #1e1717;
   background: url(../img/bg.png);
-  background-size: cover;
+  background-repeat: repeat;
   background-attachment: fixed;
 }
 section {
@@ -52,7 +53,7 @@ a {
   position: fixed;
   width: 25%;
   margin-left: 8%;
-  margin-top: 3%;
+  margin-top: 75px;
   -webkit-box-shadow: 0px 0px 25px 26px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 25px 26px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 25px 26px rgba(0, 0, 0, 0.5);
@@ -325,55 +326,35 @@ blockquote {
 }
 
 /* Mobile */
-@media all and (min-width: 1024px) and (max-width: 1440px){
-  .my-photo {
-    margin-top: 5%;
-  }
+@media all and (min-width: 768px) and (max-width: 1440px){
   .quote {
-    width: 46%;
+    width: 63%;
+  }
+  .home_text .text__main {
+    font-size: 3rem;
   }
   .portfolio-item {
-    width: 48%;
+    width: 49%;
   }
 }
-@media all and (min-width: 425px) and (max-width: 768px){
-  .my-photo {
-    display: none;
-  }
-  #home, #education, #work, #contact, .line {
-    width: 100%;
-    float: none;
-  }
-  .quote {
-    width: 46%;
-  }
-  #contact{
-    margin-left: 0%;
-  }
-  .deisy {
-    width: 20%;
-  }
-  .copy {
-    width: 77%;
-  }
-}
-@media all and (min-width: 320px) and (max-width: 425px){
+@media (max-width: 767px){
   .my-photo {
     display: none;
   }
   .home_text .text__main {
     font-size: 2rem;
   }
-  #home, #education, #work, #contact, .line {
+  #home, .line, #education, #work, .portfolio-item {
     width: 100%;
     float: none;
   }
-  .quote {
-    width: 100%;
-    text-align: center;
+  #home{
+    padding-bottom: 10px;
   }
-  #contact{
-    margin-left: 0%;
+  .quote {
+    text-align: center;
+    width: 100%;
+    float: none;
   }
   section {
     padding-top: 20px;
@@ -385,19 +366,20 @@ blockquote {
   }
   .education-name{
     padding: 0;
-    margin: 0;
   }
-  header {
+  .header {
     padding-bottom: 10px;
   }
-  .portfolio-item {
+  #contact {
     width: 100%;
+    margin-left: 0%;
+  }
+  .deisy {
+    width: 35%;
   }
   .copy {
     text-align: left;
-    padding-left: 25px;
-  }
-  .deisy {
-    width: 30%;
+    width: 85%;
+    padding-left: 20px;
   }
 }
